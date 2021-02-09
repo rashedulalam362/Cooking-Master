@@ -58,7 +58,8 @@ document.getElementById('btn_search').addEventListener('click',()=>{
 const renderMealInfo=Ingredient=>{
     console.log(Ingredient);
    const mealDiv=document.getElementById('meal_detail');
-   mealDiv.innerHTML=`${Ingredient.strIngredient}`
+   mealDiv.innerHTML=`<h5>${Ingredient.strIngredient}</h5>
+   <p>${Ingredient.strDescription}</p>`
 
 
 }
